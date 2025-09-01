@@ -317,8 +317,8 @@ while (true) {
 
                 $processInfo = ['incidentNo' => null, 'workflowId' => null, 'sendOk' => false];
                 if ($uploaded) {
-                    // Direkt danach Prozess RECHNUNGEN v1 Step 10 starten und senden
-                    $processInfo = startAndSendProcess($client, 'RECHNUNGEN', 1, 10);
+                    // Direkt danach Prozess Eingangsrechnung v1 Step 10 starten und senden
+                    $processInfo = startAndSendProcess($client, 'Eingangsrechnung', 1, 10);
 
                     // Nach erfolgreichem Start: WorkflowId/IncidentNumber ins Archiv schreiben
                     if (!empty($processInfo['workflowId']) || !empty($processInfo['incidentNo'])) {
@@ -389,7 +389,7 @@ while (true) {
                 $client = new CurlClient();
                 $client->authenticate();
 
-                $processInfo = startAndSendProcess($client, 'RECHNUNGEN', 1, 10);
+                $processInfo = startAndSendProcess($client, 'Eingangsrechnung', 1, 10);
 
                 $client->destroySession();
 

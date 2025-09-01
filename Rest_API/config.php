@@ -6,7 +6,7 @@ const PASSWORD = "JRAcademy_Tr@1ning"; // Password for authentication
 
 const ARCHIVE = "220BD671-D875-FF15-6C99-22022682020D"; // Archive table or GUID for JobArchive examples
 
-const PROCESS = "RECHNUNGEN"; // Process name for process examples
+const PROCESS = "Eingangsrechnung"; // Process name for process examples
 const PROCESS_VERSION = 1; // Process version for process examples
 const PROCESS_BOX_ID = 1; // Process box id for process examples
 
